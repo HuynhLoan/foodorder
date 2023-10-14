@@ -3,6 +3,7 @@ contact: hloan4266@gmail.com
 Chức năng người dùng:
 - Đăng nhập, đăng ký.
 - Xem danh mục, sản phẩm.
+- Tìm kiếm sản phẩm
 - Thêm đánh giá.
 - Giỏ hàng, quản lý giỏ hàng.
 - Đặt hàng.
