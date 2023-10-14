@@ -7,7 +7,7 @@
   
   </head>
   <body>
-  <?php include("navbar.php"); ?>
+  <?php include("Navbar.php"); ?>
     <section class="home-slider owl-carousel js-fullheight">
       <div class="slider-item js-fullheight" style="background-image: url(images/ig4.jpg);">
       	<div class="overlay"></div>

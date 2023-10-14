@@ -47,12 +47,12 @@ if (isset($_POST["btn_submit"])) {
                 // Thực thi hành động sau khi lưu thông tin vào session
 				// ở đây mình tiến hành chuyển hướng trang web tới một trang gọi là index.php
 				$_SESSION["logged"] = true;
-					header('Location: indexadmin.php');
+					header('Location: IndexAdmin.php');
 		}
 	}
 }
 ?>
-	<form method="POST" action="dang-nhap.php">
+	<form method="POST" action="Login.php">
 
 	<h1 style=" text-align:center;">Đăng nhập</h1>
 	<div class="form-group">
@@ -67,7 +67,7 @@ if (isset($_POST["btn_submit"])) {
 	<button type="submit" class="btn btn-primary" name="btn_submit">Đăng nhập</button>
 	</div>
 	<div class="contain">
-    	<a href="index.php">Quay lại</a>
+    	<a href="Index.php">Quay lại</a>
   	</div>
   </form>
  

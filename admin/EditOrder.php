@@ -44,7 +44,7 @@
 		$sql = "UPDATE orders SET name = '$name', email = '$email', xacnhan = '$xacnhan' WHERE id=$id";
 		// thực thi câu $sql với biến conn lấy từ file connection.php
 		mysqli_query($conn,$sql);
-		header('Location: ManagerOrder.php');
+		header('Location: ManageOrder.php');
 	}
 
 	$id = -1;

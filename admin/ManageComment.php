@@ -54,7 +54,7 @@
             <tr>
               <td><?php echo $data["comment_sender_name"]; ?></td>
               <td><?php echo $data["date"]; ?></td>
-              <td><?php echo $data["id"]; ?></td>
+              <td><?php echo $data["parent_comment_id"]; ?></td>
               <td><?php echo $data["comment"]; ?></td>
               	
               <td>

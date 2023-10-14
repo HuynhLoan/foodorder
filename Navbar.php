@@ -11,21 +11,21 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="index.php" class="nav-link">Trang chủ</a></li>
-	        	<li class="nav-item active"><a href="order.php" class="nav-link">Thực đơn</a></li>
-				<li class="nav-item active"><a href="register.php" class="nav-link">Đăng ký</a></li>
-				<li class="nav-item active"><a href="dang-nhap.php" class="nav-link">Đăng nhập</a></li>
+	        	<li class="nav-item active"><a href="Index.php" class="nav-link">Trang chủ</a></li>
+	        	<li class="nav-item active"><a href="Order.php" class="nav-link">Thực đơn</a></li>
+				<li class="nav-item active"><a href="Register.php" class="nav-link">Đăng ký</a></li>
+				<li class="nav-item active"><a href="Login.php" class="nav-link">Đăng nhập</a></li>
 
 				<li class="dropdown">
 		  			<span class="nav-link" name="category" type="button" data-toggle="dropdown" style="color:#c8a97e; font-size: 14px; padding-top: 12.8px;">Danh mục</span>
 		  			<ul class="dropdown-menu">
         		<?php
 					$sql = "SELECT * FROM category ";
-					$conn = mysqli_connect("localhost", "root", "", "test");
+					$conn = mysqli_connect("localhost", "root", "", "food");
             		$ketqua = mysqli_query($conn, $sql);
         			while ($row = mysqli_fetch_assoc($ketqua)) {
           
-           				echo '<li class="nav-item active"> <a class="dropdown-item" href="list_category.php?categoryid= ' . $row['categoryid'] . '">' . $row['catname'] . '</li> </a>';
+           				echo '<li class="nav-item active"> <a class="dropdown-item" href="ListCategory.php?categoryid= ' . $row['categoryid'] . '">' . $row['catname'] . '</li> </a>';
 
         			}
 				?>
