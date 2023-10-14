@@ -1,5 +1,6 @@
 # foodorder
-contact: hloan4266@gmail.com
+Hỗ trợ: hloan4266@gmail.com.
+
 Chức năng người dùng:
 - Đăng nhập, đăng ký.
 - Xem danh mục, sản phẩm.
