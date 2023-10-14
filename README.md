@@ -9,7 +9,6 @@ Chức năng người dùng:
 - Giỏ hàng, quản lý giỏ hàng.
 - Đặt hàng.
 ![image](https://github.com/HuynhLoan/foodorder/assets/55612115/237825b1-b62f-4f7c-8878-8e802f35f38d)
-![image](https://github.com/HuynhLoan/foodorder/assets/55612115/6dc9042e-1987-40d0-88a8-5e36df9fb505)
 ![image](https://github.com/HuynhLoan/foodorder/assets/55612115/2bca7d32-64f1-49f5-b464-49a59e41a98a)
 ![image](https://github.com/HuynhLoan/foodorder/assets/55612115/ea7454ea-009f-4837-9aaa-b713ac65c28f)
 ![image](https://github.com/HuynhLoan/foodorder/assets/55612115/229436b7-10ed-485b-a8b0-44cc7699d049)
