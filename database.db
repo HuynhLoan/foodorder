@@ -1,0 +1,315 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th1 09, 2021 lúc 12:21 PM
+-- Phiên bản máy phục vụ: 10.4.14-MariaDB
+-- Phiên bản PHP: 7.4.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Cơ sở dữ liệu: `food`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `baiviet`
+--
+
+CREATE TABLE `baiviet` (
+  `idblog` int(11) NOT NULL,
+  `tieude` varchar(255) NOT NULL,
+  `doanmot` text NOT NULL,
+  `anh` varchar(255) NOT NULL,
+  `doanhai` text NOT NULL,
+  `anh2` varchar(255) NOT NULL,
+  `doanba` text NOT NULL,
+  `anh3` varchar(255) NOT NULL,
+  `iddanhmuc` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `baiviet`
+--
+
+INSERT INTO `baiviet` (`idblog`, `tieude`, `doanmot`, `anh`, `doanhai`, `anh2`, `doanba`, `anh3`, `iddanhmuc`) VALUES
+(1, 'Top 3 nhà hàng 5 sao nổi tiếng tại Đà Nẵng', '<b> 1. Nơm Bistro </b> <br> <br>\r\n\r\nLô 01-A4 Khu biệt thự đảo xanh, Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0236 3799 944 <br>\r\nWebsite: nombistro.com <br>\r\nĐược mệnh danh là chiếc Nơm lớn nhất Việt Nam – tọa lạc tại khu biệt thự đẳng cấp Đảo xanh của Đà Nẵng. Đây là điểm đến thu hút cả du khách trong và ngoài nước. <br> <br>\r\n\r\nTại nhà hàng, thực khách được thưởng thức những món ăn đặc sắc, sự kết hợp khéo léo giữa nguyên liệu Việt dân dã và phong cách chế biến Asian fusion. Với kinh nghiệm chế biến ẩm thực chuyên nghiệp của đầu bếp 5 sao đã có trên 20 năm kinh nghiệm sẽ làm thực khách bất ngờ. Ngoài ẩm thực thì không gian nơi đây khá ấm cúng pha chút hoài cổ, là lựa chọn lý tưởng cho một buổi tiệc gia đình hay gặp gỡ bạn bè.\r\n<br>', 'anh1.jpg', '<b> 2. Nhà hàng Hoàng Gia </b><br><br>\r\n\r\nĐịa chỉ: 10 Phạm Văn Đồng – Sơn Trà – Đà Nẵng <br>\r\nĐiện thoại: 098 724 29 99 <br>\r\nNhà hàng rộng rãi, kiến trúc nhà cổ được xây dựng từ gỗ tạo nên một không gian khá tuyệt. Thiết kế nhà hàng y hệt như thiết kế của hoàng cung ngày xưa làm thực khách không muốn rời tầm nhìn nửa bước. Bàn ghế chủ yếu là bàn ghế gỗ rất sang trọng và lịch sự, cực kỳ phù hợp cho các cuộc gặp mặt quan trọng. Nhân viên nhà hàng nhiệt tình, phục vụ ổn. Món ăn ở đây khá đa dạng, cách nêm nếm đồ ăn ngon. Những món ăn ở đây được chế biến đúng kiểu hoàng gia, trang trí bắt mắt, hương vị rất vừa và ngon. Và điều chắc chắn là giá cả cũng sẽ không rẻ một chút nào đâu nhé. <br>', 'anh2.webp', '<b> 3. Hải cảng Đà Nẵng Restaurant </b><br><br>\r\n\r\nĐịa chỉ: Tầng 33 -34 Khách sạn Novotel Bạch Đằng, Quận Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0901151636 <br>\r\nWebsite: haicang.vn <br>\r\nMột địa điểm khá tuyệt vời với ẩm thực do chính đầu bếp Trung Quốc biên đạo. Những món ăn ngon miễn chê như hoành thánh, cơm chiên, thịt heo quay vừa chín. Tại đây, thực khách có thể vừa thưởng thức đồ ăn vừa ngắm thành phố về đêm. Không gian yên tĩnh, thích hợp cho hẹn hò, hội họp bàn công việc hay tụ họp gia đình. <br>', 'anh3.webp', 1),
+(2, 'Top 3 nhà hàng 5 sao nổi tiếng tại Đà Nẵng', '<b> 1. Nơm Bistro </b> <br> <br>\r\n\r\nLô 01-A4 Khu biệt thự đảo xanh, Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0236 3799 944 <br>\r\nWebsite: nombistro.com <br>\r\nĐược mệnh danh là chiếc Nơm lớn nhất Việt Nam – tọa lạc tại khu biệt thự đẳng cấp Đảo xanh của Đà Nẵng. Đây là điểm đến thu hút cả du khách trong và ngoài nước. <br> <br>\r\n\r\nTại nhà hàng, thực khách được thưởng thức những món ăn đặc sắc, sự kết hợp khéo léo giữa nguyên liệu Việt dân dã và phong cách chế biến Asian fusion. Với kinh nghiệm chế biến ẩm thực chuyên nghiệp của đầu bếp 5 sao đã có trên 20 năm kinh nghiệm sẽ làm thực khách bất ngờ. Ngoài ẩm thực thì không gian nơi đây khá ấm cúng pha chút hoài cổ, là lựa chọn lý tưởng cho một buổi tiệc gia đình hay gặp gỡ bạn bè.\r\n<br>', 'anh1.jpg', '<b> 2. Nhà hàng Hoàng Gia </b><br><br>\r\n\r\nĐịa chỉ: 10 Phạm Văn Đồng – Sơn Trà – Đà Nẵng <br>\r\nĐiện thoại: 098 724 29 99 <br>\r\nNhà hàng rộng rãi, kiến trúc nhà cổ được xây dựng từ gỗ tạo nên một không gian khá tuyệt. Thiết kế nhà hàng y hệt như thiết kế của hoàng cung ngày xưa làm thực khách không muốn rời tầm nhìn nửa bước. Bàn ghế chủ yếu là bàn ghế gỗ rất sang trọng và lịch sự, cực kỳ phù hợp cho các cuộc gặp mặt quan trọng. Nhân viên nhà hàng nhiệt tình, phục vụ ổn. Món ăn ở đây khá đa dạng, cách nêm nếm đồ ăn ngon. Những món ăn ở đây được chế biến đúng kiểu hoàng gia, trang trí bắt mắt, hương vị rất vừa và ngon. Và điều chắc chắn là giá cả cũng sẽ không rẻ một chút nào đâu nhé. <br>', 'anh2.webp', '<b> 3. Hải cảng Đà Nẵng Restaurant </b><br><br>\r\n\r\nĐịa chỉ: Tầng 33 -34 Khách sạn Novotel Bạch Đằng, Quận Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0901151636 <br>\r\nWebsite: haicang.vn <br>\r\nMột địa điểm khá tuyệt vời với ẩm thực do chính đầu bếp Trung Quốc biên đạo. Những món ăn ngon miễn chê như hoành thánh, cơm chiên, thịt heo quay vừa chín. Tại đây, thực khách có thể vừa thưởng thức đồ ăn vừa ngắm thành phố về đêm. Không gian yên tĩnh, thích hợp cho hẹn hò, hội họp bàn công việc hay tụ họp gia đình. <br>', 'anh3.webp', 2),
+(3, 'Top 3 nhà hàng 5 sao nổi tiếng tại Đà Nẵng', '<b> 1. Nơm Bistro </b> <br> <br>\r\n\r\nLô 01-A4 Khu biệt thự đảo xanh, Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0236 3799 944 <br>\r\nWebsite: nombistro.com <br>\r\nĐược mệnh danh là chiếc Nơm lớn nhất Việt Nam – tọa lạc tại khu biệt thự đẳng cấp Đảo xanh của Đà Nẵng. Đây là điểm đến thu hút cả du khách trong và ngoài nước. <br> <br>\r\n\r\nTại nhà hàng, thực khách được thưởng thức những món ăn đặc sắc, sự kết hợp khéo léo giữa nguyên liệu Việt dân dã và phong cách chế biến Asian fusion. Với kinh nghiệm chế biến ẩm thực chuyên nghiệp của đầu bếp 5 sao đã có trên 20 năm kinh nghiệm sẽ làm thực khách bất ngờ. Ngoài ẩm thực thì không gian nơi đây khá ấm cúng pha chút hoài cổ, là lựa chọn lý tưởng cho một buổi tiệc gia đình hay gặp gỡ bạn bè.\r\n<br>', 'anh1.jpg', '<b> 2. Nhà hàng Hoàng Gia </b><br><br>\r\n\r\nĐịa chỉ: 10 Phạm Văn Đồng – Sơn Trà – Đà Nẵng <br>\r\nĐiện thoại: 098 724 29 99 <br>\r\nNhà hàng rộng rãi, kiến trúc nhà cổ được xây dựng từ gỗ tạo nên một không gian khá tuyệt. Thiết kế nhà hàng y hệt như thiết kế của hoàng cung ngày xưa làm thực khách không muốn rời tầm nhìn nửa bước. Bàn ghế chủ yếu là bàn ghế gỗ rất sang trọng và lịch sự, cực kỳ phù hợp cho các cuộc gặp mặt quan trọng. Nhân viên nhà hàng nhiệt tình, phục vụ ổn. Món ăn ở đây khá đa dạng, cách nêm nếm đồ ăn ngon. Những món ăn ở đây được chế biến đúng kiểu hoàng gia, trang trí bắt mắt, hương vị rất vừa và ngon. Và điều chắc chắn là giá cả cũng sẽ không rẻ một chút nào đâu nhé. <br>', 'anh2.webp', '<b> 3. Hải cảng Đà Nẵng Restaurant </b><br><br>\r\n\r\nĐịa chỉ: Tầng 33 -34 Khách sạn Novotel Bạch Đằng, Quận Hải Châu, Đà Nẵng <br>\r\nSố điện thoại: 0901151636 <br>\r\nWebsite: haicang.vn <br>\r\nMột địa điểm khá tuyệt vời với ẩm thực do chính đầu bếp Trung Quốc biên đạo. Những món ăn ngon miễn chê như hoành thánh, cơm chiên, thịt heo quay vừa chín. Tại đây, thực khách có thể vừa thưởng thức đồ ăn vừa ngắm thành phố về đêm. Không gian yên tĩnh, thích hợp cho hẹn hò, hội họp bàn công việc hay tụ họp gia đình. <br>', 'anh3.webp', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `product_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_price` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_image` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `qty` int(10) NOT NULL,
+  `total_price` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_code` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `cart`
+--
+
+INSERT INTO `cart` (`id`, `product_name`, `product_price`, `product_image`, `qty`, `total_price`, `product_code`) VALUES
+(91, 'Pizza', '20000', 'upload/1145_1539096763.jpg', 1, '20000', ''),
+(92, 'Salad', '75000', 'upload/eggs_in_tomatoes_1539095833.jpeg', 1, '75000', 'p1001');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `category`
+--
+
+CREATE TABLE `category` (
+  `categoryid` int(11) NOT NULL,
+  `catname` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `category`
+--
+
+INSERT INTO `category` (`categoryid`, `catname`) VALUES
+(1, 'Bữa sáng'),
+(2, 'Bữa trưa'),
+(3, 'Nước'),
+(4, 'Bữa tối');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pmode` varchar(50) CHARACTER SET utf32 COLLATE utf32_unicode_ci NOT NULL,
+  `products` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `amount_paid` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `xacnhan` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `orders`
+--
+
+INSERT INTO `orders` (`id`, `name`, `email`, `phone`, `address`, `pmode`, `products`, `amount_paid`, `xacnhan`) VALUES
+(18, 'loan huynh', 'hloan4266@gmail.com', '0333435607', '123 Hội An', 'cod', 'Bữa sáng(1), Bữa trưa(1)', '140000', 1),
+(19, 'loan huynh', 'hloan4266@gmail.com', '0333435607', '123 Hội An', 'netbanking', 'Mì ý(1)', '65000', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `categoryid` int(11) NOT NULL,
+  `product_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_amount` int(11) NOT NULL,
+  `product_price` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_qty` int(11) NOT NULL DEFAULT 1,
+  `product_image` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `product_code` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Đang đổ dữ liệu cho bảng `product`
+--
+
+INSERT INTO `product` (`id`, `categoryid`, `product_name`, `product_amount`, `product_price`, `product_qty`, `product_image`, `product_code`) VALUES
+(1, 1, 'Sandwich', 10, '70000', 1, 'upload/brocollibeef_1539096616_1539097842.jpg', 'p1000'),
+(2, 1, 'Salad', 11, '75000', 1, 'upload/eggs_in_tomatoes_1539095833.jpeg', 'p1001'),
+(3, 2, 'Mì ý', 29, '65000', 1, 'upload/brocollibeef_1539096616_1539097842.jpg', 'p1002'),
+(4, 2, 'Phở Hà Nội', 23, '11111', 1, 'upload/slow-cooker-chicken-recipes-orange-1533576720_1539097827.jpg', 'p1003'),
+(7, 2, 'Cơm', 222, '15000', 1, 'upload/slow-cooker-chicken-recipes-orange-1533576720_1539097827.jpg', 'p1006'),
+(8, 2, 'Hủ Tiếu', 4, '25000', 1, 'upload/egg_in_a_hole_recipe400_1539096098.jpg', 'p1007'),
+(14, 1, 'Pizza', 0, '20000', 1, 'upload/1145_1539096763.jpg', 'p1010'),
+(50, 3, 'Pepsi', 0, '150', 1, 'upload/cocacola_1539097796.jpg', 'p1014'),
+(58, 3, 'Coca', 0, '100000', 1, 'upload/cocacola_1539097796.jpg', '');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `tbl_comment`
+--
+
+CREATE TABLE `tbl_comment` (
+  `comment_id` int(11) NOT NULL,
+  `parent_comment_id` int(11) NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `comment_sender_name` varchar(40) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `tbl_comment`
+--
+
+INSERT INTO `tbl_comment` (`comment_id`, `parent_comment_id`, `comment`, `comment_sender_name`, `date`) VALUES
+(1, 0, '123', '123', '2020-12-23 08:03:52'),
+(2, 1, '123', '123', '2020-12-23 08:03:57'),
+(3, 0, 'loooo', 'loan', '2020-12-28 14:40:22'),
+(4, 3, '12', 'h', '2020-12-28 14:40:32');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
+  `createdate` datetime NOT NULL,
+  `is_block` tinyint(4) NOT NULL DEFAULT 0,
+  `permision` tinyint(4) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `fullname`, `createdate`, `is_block`, `permision`) VALUES
+(2, 'loan', '123', 'hloan@gmail.com', 'hloan', '0000-00-00 00:00:00', 0, 1),
+(6, 'admin', '123', 'loan@gmail.com', 'loanhuynh', '2020-12-13 00:16:36', 0, 2),
+(7, 'dung', '123', 'hfhfhhf@gmail.com', 'hloannnn', '2020-12-17 14:14:12', 0, 0),
+(8, 'phuongloan', '111', 'michaeng4266@gmail.com', 'loan huynh', '2021-01-09 10:42:48', 0, 0);
+
+--
+-- Chỉ mục cho các bảng đã đổ
+--
+
+--
+-- Chỉ mục cho bảng `baiviet`
+--
+ALTER TABLE `baiviet`
+  ADD PRIMARY KEY (`idblog`);
+
+--
+-- Chỉ mục cho bảng `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`categoryid`);
+
+--
+-- Chỉ mục cho bảng `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `product_code_2` (`product_code`),
+  ADD KEY `product_code` (`product_code`),
+  ADD KEY `categoryid` (`categoryid`);
+
+--
+-- Chỉ mục cho bảng `tbl_comment`
+--
+ALTER TABLE `tbl_comment`
+  ADD PRIMARY KEY (`comment_id`);
+
+--
+-- Chỉ mục cho bảng `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT cho các bảng đã đổ
+--
+
+--
+-- AUTO_INCREMENT cho bảng `baiviet`
+--
+ALTER TABLE `baiviet`
+  MODIFY `idblog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT cho bảng `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+
+--
+-- AUTO_INCREMENT cho bảng `category`
+--
+ALTER TABLE `category`
+  MODIFY `categoryid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT cho bảng `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT cho bảng `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+
+--
+-- AUTO_INCREMENT cho bảng `tbl_comment`
+--
+ALTER TABLE `tbl_comment`
+  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT cho bảng `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- Các ràng buộc cho các bảng đã đổ
+--
+
+--
+-- Các ràng buộc cho bảng `product`
+--
+ALTER TABLE `product`
+  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`categoryid`) REFERENCES `category` (`categoryid`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
